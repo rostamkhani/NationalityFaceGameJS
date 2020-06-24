@@ -1,0 +1,67 @@
+<!-- Aref.rostamkhani@gmail.com 2020/6/25 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
+    <link rel="stylesheet" href="CSS/semantic.min.css">
+    <script src="JS/People.js"></script>
+    <script src="JS/NationalityGame.js"></script>
+    <script src="JS/interact.min.js"></script>
+    <script src="JS/jquery-3.1.1.min.js"></script>
+    <script src="JS/semantic.min.js"></script>
+    <script src='JS/main.js'></script>
+    <style>
+        .MyScore {
+            width: 100% !important;
+            margin-top: 2px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="GameScoreboard">
+        <div class="ui Black horizontal big label MyScore">
+            Score: <span id="lblScore">0</span>
+        </div>
+        <div class="ui green horizontal large label MyScore">
+            <i class="thumbs up icon "></i> True: <span id="lblTrue">0</span>
+        </div>
+        <div class="ui red  thumbs-down horizontal large label MyScore">
+            <i class="thumbs down icon"></i> False: <span id="lblFalse">0</span>
+        </div>
+        <div class="ui grey horizontal large label MyScore">
+            <i class="images icon"></i> Count: <span id="lblCount">0</span>
+        </div>
+    </div>
+    <div id="GamePanel">
+
+        <div class="CountryBox Country1" NationalityType="1"><span>Japanese</span></div>
+        <div class="CountryBox Country2" NationalityType="2"><span>Chinese</span></div>
+        <div class="CountryBox Country3" NationalityType="3"><span>Korean</span></div>
+        <div class="CountryBox Country4" NationalityType="4"><span>Thai</span></div>
+
+        <!-- <div class="PeopleItem"><img src="Data/1/(1).jpg" alt=""></div> -->
+
+
+    </div>
+
+    <p id="EndGame">End Game</p>
+
+    <div id="StartGame" class=".ui.basic.modal">
+        <button class="massive ui button purple"  tabindex="0">
+            <i class="play user"></i>
+            Start Game
+        </button>
+    </div>
+
+
+</body>
+
+</html>
